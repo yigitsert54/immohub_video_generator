@@ -1,6 +1,7 @@
 # import from own files
 from urls import ROOT_DOMAIN
 from scripts.create_slideshow import slide_show
+from keys import OPEN_AI_KEY
 
 # import video template utils
 from scripts.video_template_utils import (
@@ -1299,10 +1300,7 @@ if __name__ == '__main__':
             return video
 
         # initialize Open AI Client
-        open_ai_api_key = (
-            "sk-proj-lLDDfXdgXlsUEUKbUIYL6p0LFQ0KuaaZyPqmcoQYwhmHzBO1MnZ-5X_iL21LiK0MPALQg5XMIdT3BlbkFJk8Jm9HNN"
-            "BSyeA6YgiqUnCjtLrwLE8nnykf02kNBhDkFhQA418Cr0podbz-cw6UFIxOEL9Aq6UA")
-        client = OpenAI(api_key=open_ai_api_key)
+        client = OpenAI(api_key=OPEN_AI_KEY)
 
         # initialize Video Generator
         video_generator = VideoGenerator(client=client)
