@@ -1,0 +1,7 @@
+title|Einmalige Immobilie am Wiener Weinberg mit atemberaubender Aussicht auf den See
+price-text|PREIS
+price|€ 700
+location|Wienerberg, Wien, Österreich
+rentorbuy|Kauf
+flatorhouse|Wohnung
+squarefeets|1.200 m2
