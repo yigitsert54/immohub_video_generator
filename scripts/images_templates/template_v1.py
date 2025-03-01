@@ -27,7 +27,7 @@ def template_v1(data, colors, sizes, fonts):
     y_position += draw.textbbox((0, 0), 'temp_text', PRICE_FONT)[3]
 
     full_area_text = f'{data["rentorbuy"]} / {data["flatorhouse"]} / {data["squarefeets"]}'
-    draw.text((left_right_padding, y_position), full_area_text, colors['title_background'], AREA_FONT)
+    draw.text((left_right_padding, y_position), full_area_text, colors['area'], AREA_FONT)
     y_position += draw.textbbox((0, 0), 'temp_text', AREA_FONT)[3]
 
     draw.text((left_right_padding, y_position), data['location'], colors['location'], LOCATION_FONT)

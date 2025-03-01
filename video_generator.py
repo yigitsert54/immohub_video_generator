@@ -251,7 +251,6 @@ class VideoGenerator:
         logo_url = immo_data["logo_url"]
 
         # Download images and save path
-        # Download images and save path
         images_path = self.download_images(
             property_id=property_id,
             image_urls=image_urls,
