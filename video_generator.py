@@ -793,8 +793,13 @@ class VideoGenerator:
             'location': location_font_path
         }
 
+        # Add opacity to color_1 (background box)
+        initial_color_1_rgba = self.convert_to_rgba(color_data["color_1"])
+        rgba_string_with_opacity = "rgba" + str(initial_color_1_rgba[:3] + (0.6,))
+        modified_rgba_color_1 = self.convert_to_rgba(rgba_string_with_opacity)
+
         colors = {
-            'background': self.convert_to_rgba(color_data["color_1"]),  # Background box
+            'background': modified_rgba_color_1,  # Background box
             'location': self.convert_to_rgba(color_data["color_2"]), # Text 1: Location
             'price': self.convert_to_rgba(color_data["color_3"]),  # Text 2: Price
             'area': self.convert_to_rgba(color_data["color_4"]),  # Text 3: Area
